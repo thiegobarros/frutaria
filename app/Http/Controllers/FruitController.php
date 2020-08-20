@@ -13,7 +13,7 @@ class FruitController extends Controller
      */
     public function index()
     {
-        //
+        return view('fruit.index');
     }
 
     /**
@@ -23,7 +23,7 @@ class FruitController extends Controller
      */
     public function create()
     {
-        //
+        return view('fruit.create');
     }
 
     /**
