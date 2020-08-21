@@ -2,8 +2,6 @@
 
 @section('content')
     <div class="container">
-        <a href="/client/create" class="btn btn-primary">
-            Adicionar Cliente
-        </a>
+        <index-client></index-client>
     </div>
 @endsection

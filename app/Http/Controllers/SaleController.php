@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Sale;
 
 class SaleController extends Controller
 {
@@ -34,7 +35,13 @@ class SaleController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        dd($request->all());
+        try {
+            Sale::create($request->all());
+            return true;
+        } catch (\Throwable $th) {
+            return false;
+        }
     }
 
     /**

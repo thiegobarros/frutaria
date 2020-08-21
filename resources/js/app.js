@@ -20,6 +20,13 @@ window.Vue = require('vue');
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 //Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+Vue.component('create-client', require('./components/create/CreateClient.vue').default);
+Vue.component('create-fruit', require('./components/create/CreateFruit.vue').default);
+Vue.component('create-sale', require('./components/create/CreateSale.vue').default);
+
+Vue.component('index-client', require('./components/index/IndexClient.vue').default);
+Vue.component('index-fruit', require('./components/index/IndexFruit.vue').default);
+Vue.component('index-sale', require('./components/index/IndexSale.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

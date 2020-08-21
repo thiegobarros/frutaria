@@ -2,6 +2,6 @@
 
 @section('content')
     <div class="container">
-        Tela de cadastro de clientes
+        <create-client></create-client>
     </div>
 @endsection
